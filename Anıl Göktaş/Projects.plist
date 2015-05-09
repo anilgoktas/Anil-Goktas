@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ProjectKeys</key>
+	<array>
+		<string>TVSerieTracker</string>
+		<string>TiyatroTakip</string>
+		<string>HerGunIngilizce</string>
+		<string>TodayInHistoryForiOS</string>
+		<string>iYemekhane</string>
+		<string>SloveniaStudentCoupons</string>
+		<string>SummerCampChallange</string>
+		<string>FlappyMatrix</string>
+	</array>
+	<key>Projects</key>
+	<dict>
+		<key>TVSerieTracker</key>
+		<dict>
+			<key>Name</key>
+			<string>TV Serie Tracker</string>
+			<key>Detail</key>
+			<string>Shows you air dates of TV series you follow.
+
+Notifies you when new episode of TV serie comes out.</string>
+			<key>iTunesURL</key>
+			<string>https://itunes.apple.com/us/app/tv-serie-tracker/id896671529?mt=8&amp;uo=6&amp;at=&amp;ct=</string>
+		</dict>
+		<key>TiyatroTakip</key>
+		<dict>
+			<key>Name</key>
+			<string>Tiyatro Takip</string>
+			<key>Detail</key>
+			<string>Track schedule of Turkish State Theatres and be notified about new plays.
+
+Rate plays and share with your friends.</string>
+			<key>iTunesURL</key>
+			<string>https://itunes.apple.com/us/app/tiyatro-takip/id945766189?mt=8&amp;uo=6&amp;at=&amp;ct=</string>
+		</dict>
+		<key>HerGunIngilizce</key>
+		<dict>
+			<key>Name</key>
+			<string>Her Gün İngilizce</string>
+			<key>Detail</key>
+			<string>Want to improve your English?
+
+Select your level and alarm hour. We’ll send you three words with their meanings every day!
+(Turkish - English)</string>
+			<key>iTunesURL</key>
+			<string>https://itunes.apple.com/us/app/her-gun-ingilizce/id901993525?mt=8&amp;uo=6&amp;at=&amp;ct=</string>
+		</dict>
+		<key>TodayInHistoryForiOS</key>
+		<dict>
+			<key>Name</key>
+			<string>Today in History for iOS</string>
+			<key>Detail</key>
+			<string>Your mobile source for what happened today in history.</string>
+			<key>iTunesURL</key>
+			<string>https://itunes.apple.com/us/app/today-in-history-for-ios/id951313738?mt=8&amp;uo=6&amp;at=&amp;ct=</string>
+		</dict>
+		<key>iYemekhane</key>
+		<dict>
+			<key>Name</key>
+			<string>iYemekhane</string>
+			<key>Detail</key>
+			<string>Reach lunch menu of several universities in Turkey and be notified daily.</string>
+			<key>iTunesURL</key>
+			<string>https://itunes.apple.com/us/app/iyemekhane/id933025352?mt=8&amp;uo=6&amp;at=&amp;ct=</string>
+		</dict>
+		<key>SloveniaStudentCoupons</key>
+		<dict>
+			<key>Name</key>
+			<string>Slovenia Student Coupons</string>
+			<key>Detail</key>
+			<string>Are you a student in Slovenia and looking for some place to eat using your coupons? You should really check this app.
+
+You can favorite restaurants, find near ones and share them with your friends, even use navigation to get there.
+
+You can also find useful reviews about restaurants.</string>
+			<key>iTunesURL</key>
+			<string>https://itunes.apple.com/us/app/slovenia-student-coupons/id951393739?mt=8&amp;uo=6&amp;at=&amp;ct=</string>
+		</dict>
+		<key>SummerCampChallange</key>
+		<dict>
+			<key>Name</key>
+			<string>Summer Camp Challange</string>
+			<key>Detail</key>
+			<string>Join Summer Camp Challenge and earn some medals from activities!</string>
+			<key>iTunesURL</key>
+			<string>https://itunes.apple.com/us/app/summer-camp-challange/id957763952?mt=8&amp;uo=6&amp;at=&amp;ct=</string>
+		</dict>
+		<key>FlappyMatrix</key>
+		<dict>
+			<key>Name</key>
+			<string>Flappy Matrix</string>
+			<key>Detail</key>
+			<string>Tap to collect weapon crates, watch out for sentinels!</string>
+			<key>iTunesURL</key>
+			<string>https://itunes.apple.com/us/app/flappy-matrix/id961582507?mt=8&amp;uo=6&amp;at=&amp;ct=</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
