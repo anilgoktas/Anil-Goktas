@@ -1,6 +1,8 @@
 # Anil-Goktas
 WWDC 2015 Scholarship Application
 
+##License
+
 Copyright 2015 Anıl Göktaş
 
 Licensed under the Apache License, Version 2.0 (the "License");
