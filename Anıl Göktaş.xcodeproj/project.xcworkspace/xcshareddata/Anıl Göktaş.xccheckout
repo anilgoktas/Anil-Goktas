@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6DC81A3A-6DFF-4AF7-B6F2-CA81BF411BF0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Anıl Göktaş</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>16ADF13BE1DDBAA464579EBF25E62C343294929D</key>
+		<string>https://github.com/anilgoktas/Anil-Goktas.git</string>
+		<key>650721E89752C73E2BF02F9901E13BA1C1E94E4D</key>
+		<string>https://bitbucket.org/anilgoktas/an-l-g-kta.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Anıl Göktaş.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>16ADF13BE1DDBAA464579EBF25E62C343294929D</key>
+		<string>../..</string>
+		<key>650721E89752C73E2BF02F9901E13BA1C1E94E4D</key>
+		<string>../../../An%C4%B1l%20Go%CC%88ktas%CC%A7</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/anilgoktas/Anil-Goktas.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>16ADF13BE1DDBAA464579EBF25E62C343294929D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>650721E89752C73E2BF02F9901E13BA1C1E94E4D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>An%C4%B1l%20Go%CC%88ktas%CC%A7</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>16ADF13BE1DDBAA464579EBF25E62C343294929D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Anil-Goktas</string>
+		</dict>
+	</array>
+</dict>
+</plist>

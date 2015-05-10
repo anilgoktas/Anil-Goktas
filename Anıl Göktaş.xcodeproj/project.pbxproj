@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		202FF3BE1AECB2F0007870AD /* IntroductionContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202FF3BD1AECB2F0007870AD /* IntroductionContainerViewController.swift */; };
 		20959BFB1AEA4D4500264598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20959BFA1AEA4D4500264598 /* AppDelegate.swift */; };
-		20959BFD1AEA4D4500264598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20959BFC1AEA4D4500264598 /* ViewController.swift */; };
+		20959BFD1AEA4D4500264598 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20959BFC1AEA4D4500264598 /* IntroductionViewController.swift */; };
 		20959C001AEA4D4500264598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20959BFE1AEA4D4500264598 /* Main.storyboard */; };
 		20959C021AEA4D4500264598 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20959C011AEA4D4500264598 /* Images.xcassets */; };
 		20959C051AEA4D4500264598 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20959C031AEA4D4500264598 /* LaunchScreen.xib */; };
 		20959C111AEA4D4500264598 /* An_l_Go_ktas_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20959C101AEA4D4500264598 /* An_l_Go_ktas_Tests.swift */; };
+		20959C1C1AEA4D6C00264598 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20959C1A1AEA4D6C00264598 /* Project.swift */; };
+		20959C1D1AEA4D6C00264598 /* Projects.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20959C1B1AEA4D6C00264598 /* Projects.plist */; };
+		20959C221AEA94AF00264598 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20959C211AEA94AF00264598 /* UIExtension.swift */; };
+		20DB97521AEC0C430028F8F7 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB97511AEC0C430028F8F7 /* AboutViewController.swift */; };
+		20DB97561AEC42690028F8F7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB97551AEC42690028F8F7 /* TabBarController.swift */; };
+		20E608131AECC6F9007AE65E /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E608121AECC6F9007AE65E /* ProjectViewController.swift */; };
+		20E91A9E1AECC49C00522460 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E91A9D1AECC49C00522460 /* ProjectsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +34,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		202FF3BD1AECB2F0007870AD /* IntroductionContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionContainerViewController.swift; sourceTree = "<group>"; };
 		20959BF51AEA4D4500264598 /* Anıl Göktaş.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anıl Göktaş.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20959BF91AEA4D4500264598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20959BFA1AEA4D4500264598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		20959BFC1AEA4D4500264598 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20959BFC1AEA4D4500264598 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		20959BFF1AEA4D4500264598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20959C011AEA4D4500264598 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		20959C041AEA4D4500264598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		20959C0A1AEA4D4500264598 /* Anıl GöktaşTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Anıl GöktaşTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20959C0F1AEA4D4500264598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20959C101AEA4D4500264598 /* An_l_Go_ktas_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = An_l_Go_ktas_Tests.swift; sourceTree = "<group>"; };
+		20959C1A1AEA4D6C00264598 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		20959C1B1AEA4D6C00264598 /* Projects.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Projects.plist; sourceTree = "<group>"; };
+		20959C211AEA94AF00264598 /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		20DB97511AEC0C430028F8F7 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		20DB97551AEC42690028F8F7 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		20E608121AECC6F9007AE65E /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
+		20E91A9D1AECC49C00522460 /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +94,10 @@
 			isa = PBXGroup;
 			children = (
 				20959BFA1AEA4D4500264598 /* AppDelegate.swift */,
-				20959BFC1AEA4D4500264598 /* ViewController.swift */,
 				20959BFE1AEA4D4500264598 /* Main.storyboard */,
+				20959C1E1AEA4D7800264598 /* Controller */,
+				20959C201AEA7FBC00264598 /* View */,
+				20959C1F1AEA4D8800264598 /* Model */,
 				20959C011AEA4D4500264598 /* Images.xcassets */,
 				20959C031AEA4D4500264598 /* LaunchScreen.xib */,
 				20959BF81AEA4D4500264598 /* Supporting Files */,
@@ -110,6 +128,36 @@
 				20959C0F1AEA4D4500264598 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20959C1E1AEA4D7800264598 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20959BFC1AEA4D4500264598 /* IntroductionViewController.swift */,
+				202FF3BD1AECB2F0007870AD /* IntroductionContainerViewController.swift */,
+				20DB97551AEC42690028F8F7 /* TabBarController.swift */,
+				20E91A9D1AECC49C00522460 /* ProjectsViewController.swift */,
+				20E608121AECC6F9007AE65E /* ProjectViewController.swift */,
+				20DB97511AEC0C430028F8F7 /* AboutViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		20959C1F1AEA4D8800264598 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20959C1A1AEA4D6C00264598 /* Project.swift */,
+				20959C1B1AEA4D6C00264598 /* Projects.plist */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		20959C201AEA7FBC00264598 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20959C211AEA94AF00264598 /* UIExtension.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +209,7 @@
 				TargetAttributes = {
 					20959BF41AEA4D4500264598 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 7CWJ7KK9KZ;
 					};
 					20959C091AEA4D4500264598 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -194,6 +243,7 @@
 			files = (
 				20959C001AEA4D4500264598 /* Main.storyboard in Resources */,
 				20959C051AEA4D4500264598 /* LaunchScreen.xib in Resources */,
+				20959C1D1AEA4D6C00264598 /* Projects.plist in Resources */,
 				20959C021AEA4D4500264598 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +262,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20959BFD1AEA4D4500264598 /* ViewController.swift in Sources */,
+				20DB97521AEC0C430028F8F7 /* AboutViewController.swift in Sources */,
+				202FF3BE1AECB2F0007870AD /* IntroductionContainerViewController.swift in Sources */,
+				20959C221AEA94AF00264598 /* UIExtension.swift in Sources */,
+				20959BFD1AEA4D4500264598 /* IntroductionViewController.swift in Sources */,
+				20E608131AECC6F9007AE65E /* ProjectViewController.swift in Sources */,
+				20DB97561AEC42690028F8F7 /* TabBarController.swift in Sources */,
 				20959BFB1AEA4D4500264598 /* AppDelegate.swift in Sources */,
+				20959C1C1AEA4D6C00264598 /* Project.swift in Sources */,
+				20E91A9E1AECC49C00522460 /* ProjectsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Anıl Göktaş/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Anıl Göktaş/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +470,7 @@
 				20959C161AEA4D4500264598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20959C171AEA4D4500264598 /* Build configuration list for PBXNativeTarget "Anıl GöktaşTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +479,7 @@
 				20959C191AEA4D4500264598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

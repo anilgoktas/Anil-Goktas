@@ -1,6 +1,6 @@
 //
 //  Project.swift
-//  PropertyList
+//  Anıl Göktaş
 //
 //  Created by Anıl Göktaş on 4/24/15.
 //  Copyright (c) 2015 Anıl Göktaş. All rights reserved.
@@ -13,11 +13,10 @@ class Project: NSObject {
     // MARK: - Properties
     
     let key: String
-    let name: String
-    let detail: String
-    let iTunesURL: NSURL
-    let screenshot: UIImage
-    let icon: UIImage
+    var name: String
+    var detail: String
+    var iTunesURL: NSURL
+    var icon: UIImage
     
     // MARK: - Lifetime
     
@@ -30,12 +29,6 @@ class Project: NSObject {
             self.iTunesURL = URL
         } else {
             self.iTunesURL = NSURL(string: "https://twitter.com/goktasanil")!
-        }
-        
-        if let image = UIImage(named: key+"Screen") {
-            self.screenshot = image
-        } else {
-            self.screenshot = UIImage(named: "ScreenPlaceholder")!
         }
         
         if let icon = UIImage(named: key+"Icon") {

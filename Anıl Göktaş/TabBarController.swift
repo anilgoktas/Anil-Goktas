@@ -9,27 +9,48 @@
 import UIKit
 
 class TabBarController: UITabBarController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: - View Life Cycle
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        createMask()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        animateMask()
     }
-    */
+    
+    // MARK: - Animations
+    
+    func createMask() {
+        view.layer.mask = CALayer()
+        view.layer.mask.contents = UIImage(named: "CircleProfile")!.CGImage
+        view.layer.mask.bounds = CGRect(x: 0, y: 0, width: 0.5, height: 0.5)
+        view.layer.mask.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        view.layer.mask.position = CGPoint(x: self.view.bounds.width/2, y: self.view.bounds.height/2)
+    }
+    
+    func animateMask() {
+        let keyFrameAnimation = CAKeyframeAnimation(keyPath: "bounds")
+        keyFrameAnimation.delegate = self
+        keyFrameAnimation.duration = 1
+        keyFrameAnimation.beginTime = CACurrentMediaTime()
+        let initalBounds = NSValue(CGRect: view.layer.mask.bounds)
+        let secondBounds = NSValue(CGRect: CGRect(x: 0, y: 0, width: 90, height: 90))
+        let finalBounds = NSValue(CGRect: CGRect(x: 0, y: 0, width: 1500, height: 1500))
+        keyFrameAnimation.values = [initalBounds, secondBounds, finalBounds]
+        keyFrameAnimation.keyTimes = [0, 0.3, 1]
+        keyFrameAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut), CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)]
+        view.layer.mask.addAnimation(keyFrameAnimation, forKey: "bounds")
+    }
+    
+    override func animationDidStop(anim: CAAnimation!, finished flag: Bool) {
+        // Remove mask when animation completes
+        view.layer.mask = nil
+    }
 
 }

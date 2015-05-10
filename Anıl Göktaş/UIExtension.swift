@@ -8,14 +8,43 @@
 
 import UIKit
 
-class View: UIView {
+@IBDesignable
+class View: UIView { }
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
+@IBDesignable
+class Button: UIButton { }
+
+@IBDesignable
+class ImageView: UIImageView { }
+
+extension UIView {
+    
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+            layer.masksToBounds = newValue > 0
+        }
     }
-    */
-
+    
+    @IBInspectable var borderWidth: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.borderWidth = newValue
+        }
+    }
+    
+    @IBInspectable var borderColor: UIColor? {
+        get {
+            return UIColor(CGColor: layer.borderColor)
+        }
+        set {
+            layer.borderColor = newValue?.CGColor
+        }
+    }
+    
 }

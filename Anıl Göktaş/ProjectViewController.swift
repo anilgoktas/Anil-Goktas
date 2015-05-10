@@ -8,28 +8,73 @@
 
 import UIKit
 
-class ProjectPageContentViewController: UIViewController {
-
+class ProjectViewController: UITableViewController {
+    
+    // MARK: - IBOutlets
+    
+    @IBOutlet weak var iconImageView: ImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var screenImageView: ImageView!
+    @IBOutlet weak var pageControl: UIPageControl!
+    
+    // MARK: - Properties
+    
+    var index = 0
+    var project: Project!
+    
+    // MARK: - View Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        iconImageView.image = project.icon
+        nameLabel.text = project.name
+        detailLabel.text = project.detail
+        if let image = UIImage(named: project.key+"Screen") {
+            screenImageView.image = image
+        } else {
+            screenImageView.image = UIImage(named: "ScreenPlaceholder")!
+        }
+        pageControl.currentPage = index
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewDidLayoutSubviews() {
+        screenImageView.borderWidth = 0.3
     }
-    */
+    
+}
 
+// MARK: - UITableViewDelegate
+
+extension ProjectViewController: UITableViewDelegate {
+    
+    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 120.0
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        // Show app store
+        if indexPath.row == 2 {
+            UIApplication.sharedApplication().openURL(project.iTunesURL)
+        }
+    }
+    
+    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView(frame: CGRectMake(0, 0, tableView.frame.size.width, view.bounds.size.height/12))
+        footerView.backgroundColor = .clearColor()
+        
+        return footerView
+    }
+    
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return view.bounds.size.height/12
+    }
+    
 }

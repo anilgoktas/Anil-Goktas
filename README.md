@@ -1,4 +1,7 @@
 # Anil-Goktas
+
+[![](http://img.shields.io/badge/OS%20X-10.10%2B-blue.svg)]() [![](http://img.shields.io/badge/iOS-8.0%2B-blue.svg)]() [![](http://img.shields.io/badge/Swift-1.2-blue.svg)]()
+
 WWDC 2015 Scholarship Application
 
 ##License
