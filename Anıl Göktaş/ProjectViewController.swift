@@ -1,5 +1,5 @@
 //
-//  ProjectPageContentViewController.swift
+//  ProjectViewController.swift
 //  Anıl Göktaş
 //
 //  Created by Anıl Göktaş on 4/26/15.

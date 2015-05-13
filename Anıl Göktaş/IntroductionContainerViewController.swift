@@ -1,5 +1,5 @@
 //
-//  IntroductionTableViewController.swift
+//  IntroductionContainerViewDelegate.swift
 //  Anıl Göktaş
 //
 //  Created by Anıl Göktaş on 4/26/15.
@@ -37,9 +37,9 @@ extension IntroductionContainerViewController: UITableViewDelegate {
         
         if let
         introductionController = delegate as? IntroductionViewController,
-        segueDestination = IntroductionViewController.Storyboard.SegueDestination(rawValue: indexPath.row)
+        segueDestination = IntroductionViewController.MainStoryboard.SegueDestination(rawValue: indexPath.row)
         {
-            introductionController.segueDestination = segueDestination
+            IntroductionViewController.MainStoryboard.segueDestination = segueDestination
             introductionController.segue()
         }
     }

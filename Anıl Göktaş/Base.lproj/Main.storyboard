@@ -66,7 +66,7 @@
                     <connections>
                         <outlet property="containerView" destination="FkL-AK-Irc" id="sfo-cm-6fX"/>
                         <outlet property="profileImageView" destination="80k-ot-ueu" id="A9i-oS-Lhl"/>
-                        <segue destination="Cmt-vI-lue" kind="presentation" identifier="toMain" animates="NO" id="2El-rz-Ogo"/>
+                        <segue destination="Cmt-vI-lue" kind="presentation" identifier="toTabBar" animates="NO" id="2El-rz-Ogo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

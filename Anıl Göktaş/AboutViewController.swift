@@ -35,7 +35,7 @@ class AboutViewController: UITableViewController {
         
         tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
         
-        if !isSIMAvailable() { phoneButton.hidden = true }
+        if !SIMisAvailable() { phoneButton.hidden = true }
     }
     
     // MARK: - IBActions
@@ -82,7 +82,7 @@ class AboutViewController: UITableViewController {
     
     // MARK: - Private
     
-    private func isSIMAvailable() -> Bool {
+    private func SIMisAvailable() -> Bool {
         if let
         cellularProvider  = CTTelephonyNetworkInfo().subscriberCellularProvider,
         mobileNetworkCode = cellularProvider.mobileNetworkCode

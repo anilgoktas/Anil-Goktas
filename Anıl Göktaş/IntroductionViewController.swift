@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  IntroductionViewController.swift
 //  Anıl Göktaş
 //
 //  Created by Anıl Göktaş on 4/24/15.
@@ -17,12 +17,16 @@ class IntroductionViewController: UIViewController {
     
     // MARK: - Properties
     
-    struct Storyboard {
+    struct MainStoryboard {
+        private struct SegueIdentifier {
+            static let container = "toContainer"
+            static let tabBar = "toTabBar"
+        }
         enum SegueDestination: Int {
             case Projects=1, About
         }
+        static var segueDestination = SegueDestination.Projects
     }
-    var segueDestination = Storyboard.SegueDestination.Projects
     
     // MARK: - View Life Cycle
     
@@ -40,14 +44,15 @@ class IntroductionViewController: UIViewController {
     // MARK: - UIStoryboardSegue Handling
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let containerViewController = segue.destinationViewController as? IntroductionContainerViewController where segue.identifier == "toContainer" {
+        // Segue to Container
+        if let containerViewController = segue.destinationViewController as? IntroductionContainerViewController
+            where segue.identifier == MainStoryboard.SegueIdentifier.container {
             containerViewController.delegate = self
         }
-        if let tabBarController = segue.destinationViewController as? UITabBarController where segue.identifier == "toMain" {
-            switch segueDestination {
-            case .Projects: tabBarController.selectedIndex = 0
-            case .About: tabBarController.selectedIndex = 1
-            }
+        // Segue to TabBar
+        if let tabBarController = segue.destinationViewController as? UITabBarController
+            where segue.identifier == MainStoryboard.SegueIdentifier.tabBar {
+            tabBarController.selectedIndex = MainStoryboard.segueDestination.rawValue-1
         }
     }
     
@@ -76,14 +81,21 @@ class IntroductionViewController: UIViewController {
             UIView.animateWithDuration(0.75, animations: { () -> Void in
                 self.profileImageView.transform = CGAffineTransformMakeTranslation(0, 0)
             }, completion: { (completed) -> Void in
-                // Fade picture and segue
+                // Scale picture
                 UIView.animateWithDuration(0.4, animations: { () -> Void in
                     self.profileImageView.transform = CGAffineTransformMakeScale(0.000001, 0.000001)
-                }, completion: { (completed) -> Void in
-                    self.performSegueWithIdentifier("toMain", sender: nil)
                 })
             })
         }
+    }
+    
+    func delay(delay: Double, closure: () -> ()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
     }
 
 }
@@ -94,6 +106,9 @@ extension IntroductionViewController: IntroductionContainerViewDelegate {
     
     func segue() {
         hideIntroduction()
+        delay(1.9) {
+            self.performSegueWithIdentifier(MainStoryboard.SegueIdentifier.tabBar, sender: nil)
+        }
     }
     
 }

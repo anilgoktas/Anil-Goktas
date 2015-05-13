@@ -12,8 +12,6 @@
 	<dict>
 		<key>16ADF13BE1DDBAA464579EBF25E62C343294929D</key>
 		<string>https://github.com/anilgoktas/Anil-Goktas.git</string>
-		<key>650721E89752C73E2BF02F9901E13BA1C1E94E4D</key>
-		<string>https://bitbucket.org/anilgoktas/an-l-g-kta.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Anıl Göktaş.xcodeproj</string>
@@ -21,8 +19,6 @@
 	<dict>
 		<key>16ADF13BE1DDBAA464579EBF25E62C343294929D</key>
 		<string>../..</string>
-		<key>650721E89752C73E2BF02F9901E13BA1C1E94E4D</key>
-		<string>../../../An%C4%B1l%20Go%CC%88ktas%CC%A7</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/anilgoktas/Anil-Goktas.git</string>
@@ -32,14 +28,6 @@
 	<string>16ADF13BE1DDBAA464579EBF25E62C343294929D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>650721E89752C73E2BF02F9901E13BA1C1E94E4D</string>
-			<key>IDESourceControlWCCName</key>
-			<string>An%C4%B1l%20Go%CC%88ktas%CC%A7</string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
