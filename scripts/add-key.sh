@@ -24,3 +24,4 @@ security import ./scripts/certs/development.p12 -k ~/Library/Keychains/ios-build
 # Put the provisioning profile in place
 mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
 cp "./scripts/profile/$PROFILE_NAME.mobileprovision" ~/Library/MobileDevice/Provisioning\ Profiles/
+cp "./scripts/profile/Anil_Goktas_App_Development.mobileprovision" ~/Library/MobileDevice/Provisioning\ Profiles/
