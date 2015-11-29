@@ -1,9 +1,6 @@
 language: objective-c
 xcode_project: Anıl Göktaş.xcodeproj
 xcode_scheme: Anıl GöktaşTests
-before_install:
-    - brew update
-    - brew install xctool
 env:
   global:
   - APP_NAME="Anıl Göktaş"
