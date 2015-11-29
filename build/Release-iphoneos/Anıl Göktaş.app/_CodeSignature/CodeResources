@@ -57,45 +57,95 @@
 		r19JVzKbzGk1WC4idAzwmIJ3m4Q=
 		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
-		<data>
-		1iGNvjyMY0T+tcc1PRaaXZnzk5E=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			1iGNvjyMY0T+tcc1PRaaXZnzk5E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
-		<data>
-		T1fnWRk7VPlc9vjzu3J0jS+ur0w=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			T1fnWRk7VPlc9vjzu3J0jS+ur0w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
-		<data>
-		dxNjEcnSbYP+5Jr9HU7J2xK8cOQ=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			dxNjEcnSbYP+5Jr9HU7J2xK8cOQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/OiJ-bB-cmI-view-2mF-So-FmJ.nib</key>
-		<data>
-		hp6fW3lrGjGTHi+G93r7oMAcJ3g=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			hp6fW3lrGjGTHi+G93r7oMAcJ3g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/ProjectViewControllerIdentifier.nib</key>
-		<data>
-		67Cy4YhHmiNja3+gl5jYNviy+SU=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			67Cy4YhHmiNja3+gl5jYNviy+SU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-Cmt-vI-lue.nib</key>
-		<data>
-		jtQmLgmzkqubSQHbispnmFTqmxk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			jtQmLgmzkqubSQHbispnmFTqmxk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/UITableViewController-zEu-tj-S06.nib</key>
-		<data>
-		8kSWOksygV/uEUK19zB4k/P+pUg=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			8kSWOksygV/uEUK19zB4k/P+pUg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
-		<data>
-		hsm6ru1HyDczs/WgktBEBrVV9vU=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			hsm6ru1HyDczs/WgktBEBrVV9vU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/l1b-0A-XXh-view-cdE-xV-jXV.nib</key>
-		<data>
-		nP3UAm4Fh+KxrkXkP4m4CZp/AEc=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			nP3UAm4Fh+KxrkXkP4m4CZp/AEc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/zEu-tj-S06-view-vb1-5T-80L.nib</key>
-		<data>
-		V9zY+YFepzgGr8lAG359H4gG+Ao=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			V9zY+YFepzgGr8lAG359H4gG+Ao=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Frameworks/libswiftContacts.dylib</key>
 		<data>
 		Gw98ZO3ZRPUnUHhpwjAeYU2HCVw=
@@ -131,6 +181,10 @@
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
 		bKj7iyQlYL/dlua4ifjN4Qzfl6s=
+		</data>
+		<key>Info.plist</key>
+		<data>
+		DufgnnrJrp8fztSBwtnVuz1ECXQ=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -200,45 +254,95 @@
 		r19JVzKbzGk1WC4idAzwmIJ3m4Q=
 		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
-		<data>
-		1iGNvjyMY0T+tcc1PRaaXZnzk5E=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			1iGNvjyMY0T+tcc1PRaaXZnzk5E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
-		<data>
-		T1fnWRk7VPlc9vjzu3J0jS+ur0w=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			T1fnWRk7VPlc9vjzu3J0jS+ur0w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
-		<data>
-		dxNjEcnSbYP+5Jr9HU7J2xK8cOQ=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			dxNjEcnSbYP+5Jr9HU7J2xK8cOQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/OiJ-bB-cmI-view-2mF-So-FmJ.nib</key>
-		<data>
-		hp6fW3lrGjGTHi+G93r7oMAcJ3g=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			hp6fW3lrGjGTHi+G93r7oMAcJ3g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/ProjectViewControllerIdentifier.nib</key>
-		<data>
-		67Cy4YhHmiNja3+gl5jYNviy+SU=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			67Cy4YhHmiNja3+gl5jYNviy+SU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-Cmt-vI-lue.nib</key>
-		<data>
-		jtQmLgmzkqubSQHbispnmFTqmxk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			jtQmLgmzkqubSQHbispnmFTqmxk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/UITableViewController-zEu-tj-S06.nib</key>
-		<data>
-		8kSWOksygV/uEUK19zB4k/P+pUg=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			8kSWOksygV/uEUK19zB4k/P+pUg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
-		<data>
-		hsm6ru1HyDczs/WgktBEBrVV9vU=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			hsm6ru1HyDczs/WgktBEBrVV9vU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/l1b-0A-XXh-view-cdE-xV-jXV.nib</key>
-		<data>
-		nP3UAm4Fh+KxrkXkP4m4CZp/AEc=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			nP3UAm4Fh+KxrkXkP4m4CZp/AEc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/zEu-tj-S06-view-vb1-5T-80L.nib</key>
-		<data>
-		V9zY+YFepzgGr8lAG359H4gG+Ao=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			V9zY+YFepzgGr8lAG359H4gG+Ao=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Frameworks/libswiftContacts.dylib</key>
 		<data>
 		Gw98ZO3ZRPUnUHhpwjAeYU2HCVw=
@@ -275,10 +379,6 @@
 		<data>
 		bKj7iyQlYL/dlua4ifjN4Qzfl6s=
 		</data>
-		<key>PkgInfo</key>
-		<data>
-		n57qDP4tZfLD1rCS43W0B4LQjzE=
-		</data>
 		<key>Projects.plist</key>
 		<data>
 		2kwGCgJlClpMRAL+hIMXc8lw7Y0=
@@ -290,47 +390,97 @@
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>.*</key>
+		<key>^</key>
 		<true/>
-		<key>^Info.plist$</key>
+		<key>^.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^.*\.lproj/locversion.plist$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
-			<real>10</real>
+			<real>1100</real>
 		</dict>
-		<key>^ResourceRules.plist$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>100</real>
-		</dict>
+		<key>^version.plist$</key>
+		<true/>
 	</dict>
 	<key>rules2</key>
 	<dict>
-		<key>.*</key>
-		<true/>
+		<key>.*\.dSYM($|/)</key>
+		<dict>
+			<key>weight</key>
+			<real>11</real>
+		</dict>
+		<key>^</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^(.*/)?\.DS_Store$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>2000</real>
+		</dict>
 		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
 		<dict>
 			<key>nested</key>
 			<true/>
 			<key>weight</key>
-			<real>0.0</real>
+			<real>10</real>
 		</dict>
-		<key>^Info.plist$</key>
+		<key>^.*</key>
+		<true/>
+		<key>^.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^.*\.lproj/locversion.plist$</key>
 		<dict>
 			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>1100</real>
+		</dict>
+		<key>^Info\.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^PkgInfo$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^[^/]+$</key>
+		<dict>
+			<key>nested</key>
 			<true/>
 			<key>weight</key>
 			<real>10</real>
 		</dict>
-		<key>^ResourceRules.plist$</key>
+		<key>^embedded\.provisionprofile$</key>
 		<dict>
-			<key>omit</key>
-			<true/>
 			<key>weight</key>
-			<real>100</real>
+			<real>20</real>
+		</dict>
+		<key>^version\.plist$</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
 		</dict>
 	</dict>
 </dict>
