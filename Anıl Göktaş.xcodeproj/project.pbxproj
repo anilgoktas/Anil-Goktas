@@ -34,7 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2012C1D11C0B8D89002FD7A1 /* Anıl Göktaş copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Anıl Göktaş copy-Info.plist"; path = "/Users/anilgoktas/Desktop/Anil-Goktas/Anıl Göktaş copy-Info.plist"; sourceTree = "<absolute>"; };
 		202FF3BD1AECB2F0007870AD /* IntroductionContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionContainerViewController.swift; sourceTree = "<group>"; };
 		20959BF51AEA4D4500264598 /* Anıl Göktaş.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anıl Göktaş.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20959BF91AEA4D4500264598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,7 +78,6 @@
 				20959BF71AEA4D4500264598 /* Anıl Göktaş */,
 				20959C0D1AEA4D4500264598 /* Anıl GöktaşTests */,
 				20959BF61AEA4D4500264598 /* Products */,
-				2012C1D11C0B8D89002FD7A1 /* Anıl Göktaş copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
