@@ -1,3 +1,28 @@
 language: objective-c
 xcode_project: Anıl Göktaş.xcodeproj
 xcode_scheme: Anıl GöktaşTests
+before_install:
+    - brew update
+    - brew install xctool
+env:
+  global:
+  - APP_NAME="Anıl Göktaş"
+  - 'DEVELOPER_NAME="iPhone Distribution: Anil Goktas (7CWJ7KK9KZ)"'
+  - PROFILE_NAME="Anil_Goktas_App_Ad_Hoc"
+  - secure: oRNbXqFR56JFscEpJ2teP27ocvCNLKBeuaGu9NT2t26BgnHdPTU8vmLlCuVOy+2g5TBoh7vWxa+E+byHmGfsecOeDh/87WLmQvNPDjrtw2UfbxcYTpZoE798JDKa+L2hMMXfgyGsSbYYS7BmqlowBHqa0iZIlbDT6e7w1MTUykgsyELBj/k9myG5gVus9hg5vb3nZnEGiZCVX7cx2f87uevGO3n0B5xqI0TxF52iipjugaqAcJ4zVghwQ0NK2dQDHUwcjrhze1FAA51Ucvlrr2eQQy3Nm4VsglNZfAVXLxuQGTSW954ImRVrzIfRmPlMp0y/O1titWU5KDesb8CCxEQEGNeJmhLWFlt8zzcRV/IIMW0sN4PFtkMn9mSSDNsnwlWio1b5l7DfzgI/R4LAIqW5k233aSBRQVBW4FfFUiH5gfNiAkEtHxAxMUdecx5IqTKh8YC9y82XBgS9mrNR0GU3BKPOOKpVhIDS5hBexVUoLIiNcViwDN4O3hlKRzftCo5lD7AvoArONILCx6ZTyMMy5tTVlYr39ClNrjT/V8e3ZGIQBlSFcNgx91zqWW7UTSFhUzEaFIF5BM1mJHJZDLFVkap+WQZTvfF8zVtcOIaqUZ+psFcM3lY240Q3keztq8K0trKuzCSKKE91k4j0IIvjeh89w0jV7ofRZU/itpk=
+  - secure: Oq0hn8a++h0Jve/KHqXutQmaQbbc8mhodU1sbXBclYTxH3cMqG6s5HuvMSy3LoTq8succxxXyj+MxjZgA30XjBe8BpHVL6rrHp4IwYRRDyW8Q4it5zOEwbfvx11jgTc+sBiBCnOZVsOGs77T2+FZoJUmG+qrVlyo4YhoS7nuh1VBRqG/6t6L4O3htbjD2t+vN19B8l7em0lueLDYbwAKGPQJxSQ5Oq3EGaALxjA2vuQpCCfG1O6CwVe1JiNtemUcqfJNGnAc5gxQ/wF/iLVmJ6lamIPRPPY94Ml4ZL5eInhgqoOuMThpvQ0KxtDDAzXa9t3v6b25Q0oEiuJBlvDNRwWDQjhQIr53yCgy2kLQfNzW7P8ZLGhu8sZyh6W4axQ4Z930x6HITZ2L55mwm5D9tu5lz+GaDklluP2k8/P2H46pynY63tbFDRjhkRI6PLquqtQR8Q6gO9TitD/GhevacGtPQC1C/+hIQ5MLoXTBlzxTc08vktMVV6mI7NSX5MeASZsqI0tH3UPDcX04at0GmRZRJ0C58voWlHCkcHbi+MJTmUNWC+YxRbUdsWoMb9joQ7qA8omLABDXWka51DdXgYgQBMOWqMWwflnpIqT1bBShaWlqvnpVwMMtnWH4h6cw4Im/ylTAha2EIQvCLtzyg8aNRJ9t6SQtGAac2DbPeBM=
+before_script:
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/Anil_Goktas_App_Ad_Hoc.mobileprovision.enc
+  -d -a -out scripts/profile/Anil_Goktas_App_Ad_Hoc.mobileprovision
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a
+  -out scripts/certs/dist.cer
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a
+  -out scripts/certs/dist.p12
+  - ./scripts/add-key.sh
+- ./scripts/update-bundle.sh
+script:
+- xctool -workspace Anıl\ Göktaş.xcworkspace -scheme Anıl\ Göktaş -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
+after_success:
+- ./scripts/sign-and-upload.sh
+after_script:
+- ./scripts/remove-key.sh
