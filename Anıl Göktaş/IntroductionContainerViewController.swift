@@ -22,7 +22,7 @@ class IntroductionContainerViewController: UITableViewController {
 
 // MARK: - UITableViewDelegate
 
-extension IntroductionContainerViewController: UITableViewDelegate {
+extension IntroductionContainerViewController {
     
     override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 70.0

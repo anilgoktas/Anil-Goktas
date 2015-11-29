@@ -85,7 +85,7 @@ class AboutViewController: UITableViewController {
     private func SIMisAvailable() -> Bool {
         if let
         cellularProvider  = CTTelephonyNetworkInfo().subscriberCellularProvider,
-        mobileNetworkCode = cellularProvider.mobileNetworkCode
+        _ = cellularProvider.mobileNetworkCode
         { return true }
         return false
     }
@@ -94,7 +94,7 @@ class AboutViewController: UITableViewController {
 
 // MARK: - UITableViewDelegate
 
-extension AboutViewController: UITableViewDelegate {
+extension AboutViewController {
     
     override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 44.0
@@ -127,7 +127,7 @@ extension AboutViewController: UITableViewDelegate {
 
 extension AboutViewController: MFMailComposeViewControllerDelegate, UINavigationControllerDelegate {
     
-    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         dismissViewControllerAnimated(false, completion: nil)
     }
     

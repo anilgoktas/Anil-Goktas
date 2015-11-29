@@ -47,7 +47,7 @@ class ProjectViewController: UITableViewController {
 
 // MARK: - UITableViewDelegate
 
-extension ProjectViewController: UITableViewDelegate {
+extension ProjectViewController {
     
     override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 120.0
