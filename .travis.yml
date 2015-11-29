@@ -1,0 +1,3 @@
+language: objective-c
+xcode_project: Anıl Göktaş.xcodeproj
+xcode_scheme: Anıl GöktaşTests
