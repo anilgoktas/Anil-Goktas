@@ -10,6 +10,7 @@ env:
   - secure: Oq0hn8a++h0Jve/KHqXutQmaQbbc8mhodU1sbXBclYTxH3cMqG6s5HuvMSy3LoTq8succxxXyj+MxjZgA30XjBe8BpHVL6rrHp4IwYRRDyW8Q4it5zOEwbfvx11jgTc+sBiBCnOZVsOGs77T2+FZoJUmG+qrVlyo4YhoS7nuh1VBRqG/6t6L4O3htbjD2t+vN19B8l7em0lueLDYbwAKGPQJxSQ5Oq3EGaALxjA2vuQpCCfG1O6CwVe1JiNtemUcqfJNGnAc5gxQ/wF/iLVmJ6lamIPRPPY94Ml4ZL5eInhgqoOuMThpvQ0KxtDDAzXa9t3v6b25Q0oEiuJBlvDNRwWDQjhQIr53yCgy2kLQfNzW7P8ZLGhu8sZyh6W4axQ4Z930x6HITZ2L55mwm5D9tu5lz+GaDklluP2k8/P2H46pynY63tbFDRjhkRI6PLquqtQR8Q6gO9TitD/GhevacGtPQC1C/+hIQ5MLoXTBlzxTc08vktMVV6mI7NSX5MeASZsqI0tH3UPDcX04at0GmRZRJ0C58voWlHCkcHbi+MJTmUNWC+YxRbUdsWoMb9joQ7qA8omLABDXWka51DdXgYgQBMOWqMWwflnpIqT1bBShaWlqvnpVwMMtnWH4h6cw4Im/ylTAha2EIQvCLtzyg8aNRJ9t6SQtGAac2DbPeBM=
 before_script:
 - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in ./scripts/profile/Anil_Goktas_App_Ad_Hoc.mobileprovision.enc -d -a -out ./scripts/profile/Anil_Goktas_App_Ad_Hoc.mobileprovision
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in ./scripts/profile/Anil_Goktas_App_Development.mobileprovision.enc -d -a -out ./scripts/profile/Anil_Goktas_App_Development.mobileprovision
 - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in ./scripts/certs/dist.cer.enc -d -a -out ./scripts/certs/dist.cer
 - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in ./scripts/certs/dist.p12.enc -d -a -out ./scripts/certs/dist.p12
 - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in ./scripts/certs/development.cer.enc -d -a -out ./scripts/certs/development.cer
