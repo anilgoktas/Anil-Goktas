@@ -36,6 +36,10 @@ platform :ios do
     # snapshot
   end
 
+  lane :deleteTest do
+    sh "./remove-build.sh"
+  end
+
   desc "Submit a new Beta Build to Apple TestFlight"
   desc "This will also make sure the profile is up to date"
   lane :beta do
@@ -61,6 +65,9 @@ platform :ios do
   after_all do |lane|
     # This block is called, only if the executed lane was successful
     
+    # chmod a+x ./remove-build.sh
+    sh "remove-build.sh"
+
     # slack(
     #   message: "Successfully deployed new App Update."
     # )
