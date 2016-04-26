@@ -12,7 +12,7 @@ protocol IntroductionContainerViewDelegate: class {
     func segue()
 }
 
-class IntroductionContainerViewController: UITableViewController {
+final class IntroductionContainerViewController: UITableViewController {
     
     // MARK: - Properties
     
@@ -47,7 +47,6 @@ extension IntroductionContainerViewController {
     override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let footerView = UIView(frame: CGRectMake(0, 0, tableView.frame.size.width, view.bounds.size.height/25))
         footerView.backgroundColor = .clearColor()
-        
         return footerView
     }
     

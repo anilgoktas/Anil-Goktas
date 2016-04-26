@@ -4,28 +4,37 @@
 <dict>
 	<key>ProjectKeys</key>
 	<array>
-		<string>TVSerieTracker</string>
+		<string>TVSerieTracker2</string>
+		<string>Turkoji</string>
 		<string>TiyatroTakip</string>
 		<string>SloveniaStudentCoupons</string>
-		<string>TodayInHistoryForiOS</string>
+		<string>AnyDayInHistory</string>
 		<string>HerGunIngilizce</string>
 		<string>iYemekhane</string>
 		<string>SummerCampChallange</string>
 		<string>FlappyMatrix</string>
-		<string>HeartsOneLeukemiaZero</string>
 	</array>
 	<key>Projects</key>
 	<dict>
-		<key>TVSerieTracker</key>
+		<key>TVSerieTracker2</key>
 		<dict>
 			<key>Name</key>
-			<string>TV Serie Tracker</string>
+			<string>TV Serie Tracker 2</string>
 			<key>Detail</key>
 			<string>Shows you air dates of TV series you follow.
 
 Notifies you when new episode of TV serie comes out.</string>
 			<key>iTunesURL</key>
-			<string>itms-apps://itunes.apple.com/us/app/tv-serie-tracker/id896671529?mt=8&amp;uo=6&amp;at=&amp;ct=</string>
+			<string>itms-apps://itunes.apple.com/app/id1071379261</string>
+		</dict>
+		<key>Turkoji</key>
+		<dict>
+			<key>Name</key>
+			<string>Türkoji - Senin Klavyen</string>
+			<key>Detail</key>
+			<string>Keyboard with Turkish culture symbols.</string>
+			<key>iTunesURL</key>
+			<string>itms-apps://itunes.apple.com/app/id1063040301</string>
 		</dict>
 		<key>TiyatroTakip</key>
 		<dict>
@@ -36,7 +45,7 @@ Notifies you when new episode of TV serie comes out.</string>
 
 Rate plays and share with your friends.</string>
 			<key>iTunesURL</key>
-			<string>itms-apps://itunes.apple.com/us/app/tiyatro-takip/id945766189?mt=8&amp;uo=6&amp;at=&amp;ct=</string>
+			<string>itms-apps://itunes.apple.com/app/id945766189</string>
 		</dict>
 		<key>SloveniaStudentCoupons</key>
 		<dict>
@@ -49,16 +58,16 @@ You can favorite restaurants, find near ones and share them with your friends, e
 
 You can also find useful reviews about restaurants.</string>
 			<key>iTunesURL</key>
-			<string>itms-apps://itunes.apple.com/us/app/slovenia-student-coupons/id951393739?mt=8&amp;uo=6&amp;at=&amp;ct=</string>
+			<string>itms-apps://itunes.apple.com/app/id951393739</string>
 		</dict>
-		<key>TodayInHistoryForiOS</key>
+		<key>AnyDayInHistory</key>
 		<dict>
 			<key>Name</key>
-			<string>Today in History for iOS</string>
+			<string>Any Day in History</string>
 			<key>Detail</key>
 			<string>Your mobile source for what happened today in history.</string>
 			<key>iTunesURL</key>
-			<string>itms-apps://itunes.apple.com/us/app/today-in-history-for-ios/id951313738?mt=8&amp;uo=6&amp;at=&amp;ct=</string>
+			<string>itms-apps://itunes.apple.com/app/id951313738</string>
 		</dict>
 		<key>HerGunIngilizce</key>
 		<dict>
@@ -70,7 +79,7 @@ You can also find useful reviews about restaurants.</string>
 Select your level and alarm hour. We’ll send you three words with their meanings every day!
 (Turkish - English)</string>
 			<key>iTunesURL</key>
-			<string>itms-apps://itunes.apple.com/us/app/her-gun-ingilizce/id901993525?mt=8&amp;uo=6&amp;at=&amp;ct=</string>
+			<string>itms-apps://itunes.apple.com/app/id901993525</string>
 		</dict>
 		<key>iYemekhane</key>
 		<dict>
@@ -79,7 +88,7 @@ Select your level and alarm hour. We’ll send you three words with their meanin
 			<key>Detail</key>
 			<string>Reach lunch menu of several universities in Turkey and be notified daily.</string>
 			<key>iTunesURL</key>
-			<string>itms-apps://itunes.apple.com/us/app/iyemekhane/id933025352?mt=8&amp;uo=6&amp;at=&amp;ct=</string>
+			<string>itms-apps://itunes.apple.com/app/id933025352</string>
 		</dict>
 		<key>SummerCampChallange</key>
 		<dict>
@@ -88,7 +97,7 @@ Select your level and alarm hour. We’ll send you three words with their meanin
 			<key>Detail</key>
 			<string>Join Summer Camp Challenge and earn some medals from activities!</string>
 			<key>iTunesURL</key>
-			<string>itms-apps://itunes.apple.com/us/app/summer-camp-challange/id957763952?mt=8&amp;uo=6&amp;at=&amp;ct=</string>
+			<string>itms-apps://itunes.apple.com/app/id957763952</string>
 		</dict>
 		<key>FlappyMatrix</key>
 		<dict>
@@ -97,18 +106,7 @@ Select your level and alarm hour. We’ll send you three words with their meanin
 			<key>Detail</key>
 			<string>Tap to collect weapon crates, watch out for sentinels!</string>
 			<key>iTunesURL</key>
-			<string>itms-apps://itunes.apple.com/us/app/flappy-matrix/id961582507?mt=8&amp;uo=6&amp;at=&amp;ct=</string>
-		</dict>
-		<key>HeartsOneLeukemiaZero</key>
-		<dict>
-			<key>Name</key>
-			<string>Hearts 1 - Leukemia 0</string>
-			<key>Detail</key>
-			<string>We thought Leukemia patients and their families must easily reach out to people.
-
-Therefore in this project, patient/relative provides information about needed blood type with their contact info and everyone in system is keeping informed by sms/mail/phone.</string>
-			<key>iTunesURL</key>
-			<string></string>
+			<string>itms-apps://itunes.apple.com/app/id961582507</string>
 		</dict>
 	</dict>
 </dict>

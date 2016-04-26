@@ -8,7 +8,15 @@
 
 import UIKit
 
-class ProjectViewController: UITableViewController {
+final class ProjectViewController: UITableViewController, Configurable {
+    
+    // MARK: - Constants
+    
+    private struct TableView {
+        enum Cell: Int {
+            case Icon = 0, ScreenImage, AppStore
+        }
+    }
     
     // MARK: - IBOutlets
     
@@ -28,19 +36,29 @@ class ProjectViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        iconImageView.image = project.icon
-        nameLabel.text = project.name
-        detailLabel.text = project.detail
-        if let image = UIImage(named: project.key+"Screen") {
-            screenImageView.image = image
-        } else {
-            screenImageView.image = UIImage(named: "ScreenPlaceholder")!
-        }
-        pageControl.currentPage = index
+        configure()
     }
     
     override func viewDidLayoutSubviews() {
         screenImageView.borderWidth = 0.3
+    }
+    
+}
+
+// MARK: - Configurable
+
+extension ProjectViewController {
+    
+    func configureView() {
+        iconImageView.image = project.icon
+        nameLabel.text = project.name
+        detailLabel.text = project.detail
+        if let image = UIImage(named: project.key + "Screen") {
+            screenImageView.image = image
+        } else {
+            screenImageView.image = UIImage(named: "ScreenPlaceholder")
+        }
+        pageControl.currentPage = index
     }
     
 }
@@ -61,7 +79,7 @@ extension ProjectViewController {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
         // Show app store
-        if indexPath.row == 2 {
+        if indexPath.row == TableView.Cell.AppStore.rawValue {
             UIApplication.sharedApplication().openURL(project.iTunesURL)
         }
     }
@@ -69,12 +87,11 @@ extension ProjectViewController {
     override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let footerView = UIView(frame: CGRectMake(0, 0, tableView.frame.size.width, view.bounds.size.height/12))
         footerView.backgroundColor = .clearColor()
-        
         return footerView
     }
     
     override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return view.bounds.size.height/12
+        return view.bounds.size.height / 12
     }
     
 }

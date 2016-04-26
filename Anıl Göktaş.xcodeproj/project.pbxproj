@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		202FF3BE1AECB2F0007870AD /* IntroductionContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202FF3BD1AECB2F0007870AD /* IntroductionContainerViewController.swift */; };
+		2090D4F21CCFC828008C909A /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090D4F11CCFC828008C909A /* Configurable.swift */; };
+		2090D4F41CCFC840008C909A /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090D4F31CCFC840008C909A /* Global.swift */; };
 		20959BFB1AEA4D4500264598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20959BFA1AEA4D4500264598 /* AppDelegate.swift */; };
 		20959BFD1AEA4D4500264598 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20959BFC1AEA4D4500264598 /* IntroductionViewController.swift */; };
 		20959C001AEA4D4500264598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20959BFE1AEA4D4500264598 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		202FF3BD1AECB2F0007870AD /* IntroductionContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionContainerViewController.swift; sourceTree = "<group>"; };
+		2090D4F11CCFC828008C909A /* Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		2090D4F31CCFC840008C909A /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		20959BF51AEA4D4500264598 /* Anıl Göktaş.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anıl Göktaş.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20959BF91AEA4D4500264598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20959BFA1AEA4D4500264598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2090D4F01CCFC7FD008C909A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2090D4F31CCFC840008C909A /* Global.swift */,
+				20959C211AEA94AF00264598 /* UIExtension.swift */,
+				2090D4F11CCFC828008C909A /* Configurable.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 		20959BEC1AEA4D4500264598 = {
 			isa = PBXGroup;
 			children = (
@@ -98,9 +112,8 @@
 				20959C1E1AEA4D7800264598 /* Controller */,
 				20959C201AEA7FBC00264598 /* View */,
 				20959C1F1AEA4D8800264598 /* Model */,
-				20959C011AEA4D4500264598 /* Images.xcassets */,
-				20959C031AEA4D4500264598 /* LaunchScreen.xib */,
 				20959BF81AEA4D4500264598 /* Supporting Files */,
+				2090D4F01CCFC7FD008C909A /* Extension */,
 			);
 			path = "Anıl Göktaş";
 			sourceTree = "<group>";
@@ -155,7 +168,8 @@
 		20959C201AEA7FBC00264598 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				20959C211AEA94AF00264598 /* UIExtension.swift */,
+				20959C011AEA4D4500264598 /* Images.xcassets */,
+				20959C031AEA4D4500264598 /* LaunchScreen.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -264,11 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2090D4F21CCFC828008C909A /* Configurable.swift in Sources */,
 				20DB97521AEC0C430028F8F7 /* AboutViewController.swift in Sources */,
 				202FF3BE1AECB2F0007870AD /* IntroductionContainerViewController.swift in Sources */,
 				20959C221AEA94AF00264598 /* UIExtension.swift in Sources */,
 				20959BFD1AEA4D4500264598 /* IntroductionViewController.swift in Sources */,
 				20E608131AECC6F9007AE65E /* ProjectViewController.swift in Sources */,
+				2090D4F41CCFC840008C909A /* Global.swift in Sources */,
 				20DB97561AEC42690028F8F7 /* TabBarController.swift in Sources */,
 				20959BFB1AEA4D4500264598 /* AppDelegate.swift in Sources */,
 				20959C1C1AEA4D6C00264598 /* Project.swift in Sources */,
@@ -407,6 +423,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anilgoktas.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -419,6 +436,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anilgoktas.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -426,10 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -446,10 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Anıl GöktaşTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anilgoktas.$(PRODUCT_NAME:rfc1034identifier)";

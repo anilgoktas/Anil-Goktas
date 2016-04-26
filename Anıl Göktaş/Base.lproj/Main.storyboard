@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -19,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FkL-AK-Irc">
-                                <rect key="frame" x="0.0" y="100" width="600" height="500"/>
+                                <rect key="frame" x="0.0" y="90" width="600" height="510"/>
                                 <connections>
                                     <segue destination="zEu-tj-S06" kind="embed" identifier="toContainer" id="nKQ-Ct-BVN"/>
                                 </connections>
@@ -51,7 +52,7 @@
                             <constraint firstItem="80k-ot-ueu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:6" id="8ac-cn-pfc"/>
                             <constraint firstItem="80k-ot-ueu" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3.3" id="Aio-Zt-pgc"/>
                             <constraint firstAttribute="trailing" secondItem="FkL-AK-Irc" secondAttribute="trailing" id="MU5-5a-a1i"/>
-                            <constraint firstItem="FkL-AK-Irc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="eu2-PM-r0W"/>
+                            <constraint firstItem="FkL-AK-Irc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="eu2-PM-r0W"/>
                             <constraint firstAttribute="width" secondItem="80k-ot-ueu" secondAttribute="height" multiplier="6:1" id="hdd-20-tFg"/>
                             <constraint firstAttribute="centerY" secondItem="80k-ot-ueu" secondAttribute="centerY" id="j4B-Kr-NTt"/>
                             <constraint firstItem="FkL-AK-Irc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="seb-La-zzr"/>
@@ -63,6 +64,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="containerView" destination="FkL-AK-Irc" id="sfo-cm-6fX"/>
                         <outlet property="profileImageView" destination="80k-ot-ueu" id="A9i-oS-Lhl"/>
@@ -96,8 +98,10 @@
                             <tableViewSection id="j45-Gq-qE1">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="155" id="Dsb-cH-CFN">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="155"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dsb-cH-CFN" id="jfe-un-hp7">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="154"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="9" translatesAutoresizingMaskIntoConstraints="NO" id="E91-cQ-ere">
@@ -162,8 +166,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="435" id="S56-uK-8EK">
+                                        <rect key="frame" x="0.0" y="155" width="600" height="435"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S56-uK-8EK" id="f5L-jz-uD5">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="434"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScreenPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="yNC-Iq-Huk" customClass="ImageView" customModule="Anıl_Go_ktas_" customModuleProvider="target">
@@ -211,8 +217,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="TYN-sD-VKx">
+                                        <rect key="frame" x="0.0" y="590" width="600" height="61"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TYN-sD-VKx" id="eVc-mX-Jko">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppStore" translatesAutoresizingMaskIntoConstraints="NO" id="IjI-YH-o2k">
@@ -239,6 +247,7 @@
                         </connections>
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="detailLabel" destination="UrZ-uT-jH0" id="nPJ-a3-Bk8"/>
                         <outlet property="iconImageView" destination="JL9-go-hLq" id="JWS-mO-xhD"/>
@@ -263,8 +272,10 @@
                             <tableViewSection headerTitle="Technical Skills" id="Smn-Cw-RJO">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="100" id="bRn-Yv-h3k">
+                                        <rect key="frame" x="0.0" y="25" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bRn-Yv-h3k" id="F46-pr-FkP">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCf-OV-sYn">
@@ -337,13 +348,15 @@
                             <tableViewSection headerTitle="Activities" id="b2H-Dx-N1w">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="51" id="Zdz-RY-GUa">
+                                        <rect key="frame" x="0.0" y="150" width="600" height="51"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zdz-RY-GUa" id="zov-ie-8bq">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k05-ha-KoB">
-                                                    <rect key="frame" x="25" y="10" width="550" height="30"/>
-                                                    <string key="text">Mostly I’m trying to explore different things. Exercising every two days and keeping myself both physically and mentally fit. I like to travel, going to theatre, concerts, museums etc.</string>
+                                                    <rect key="frame" x="25" y="15" width="550" height="20"/>
+                                                    <string key="text">    Mostly I’m trying to explore different things. Exercising every two days and keeping myself both physically and mentally fit. I like to travel, going to theatre, concerts, museums etc.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -352,8 +365,8 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="k05-ha-KoB" secondAttribute="trailing" constant="25" id="02S-tc-dYd"/>
                                                 <constraint firstItem="k05-ha-KoB" firstAttribute="leading" secondItem="zov-ie-8bq" secondAttribute="leading" constant="25" id="4BS-xF-D04"/>
-                                                <constraint firstItem="k05-ha-KoB" firstAttribute="top" secondItem="zov-ie-8bq" secondAttribute="top" constant="10" id="WfP-3M-jum"/>
-                                                <constraint firstAttribute="bottom" secondItem="k05-ha-KoB" secondAttribute="bottom" constant="10" id="cKo-bR-PTw"/>
+                                                <constraint firstItem="k05-ha-KoB" firstAttribute="top" secondItem="zov-ie-8bq" secondAttribute="top" constant="15" id="WfP-3M-jum"/>
+                                                <constraint firstAttribute="bottom" secondItem="k05-ha-KoB" secondAttribute="bottom" constant="15" id="cKo-bR-PTw"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -362,8 +375,10 @@
                             <tableViewSection headerTitle="Contact" id="qZ7-50-DMm">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="100" id="tkY-0g-S9c">
+                                        <rect key="frame" x="0.0" y="226" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tkY-0g-S9c" id="QVw-di-WWC">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFm-Gg-69i">
@@ -440,6 +455,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="About" image="actorLine" id="7uV-pz-Wcl"/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="phoneButton" destination="4V1-Od-54I" id="lE3-e8-mea"/>
                     </connections>
@@ -453,6 +469,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Cmt-vI-lue" customClass="TabBarController" customModule="Anıl_Go_ktas_" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="jre-Ew-cKZ">
                         <autoresizingMask key="autoresizingMask"/>
@@ -480,22 +497,23 @@
                             <tableViewSection id="UOW-iA-So4">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="cKu-T9-Ugu">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cKu-T9-Ugu" id="p68-74-1w3">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pm-jk-cEm">
                                                     <rect key="frame" x="25" y="20" width="550" height="29"/>
-                                                    <string key="text">Hey, I’m Anıl
+                                                    <mutableString key="text">Hey, I’m Anıl
 
-I am currently student at Hacettepe University in Turkey, my major is Computer Engineering. Despite I love programming, I have had my suspicions about my major.
+    I am currently student at Hacettepe University in Turkey, my major is Computer Engineering. Despite I love programming, I have had my suspicions about my major.
 
-A year ago I was going to change my major to Physchology and began studying in order to get into the program. During that time I replaced my laptop with a Macbook Air. Then my world started to change. OS X was astonishing and natural. Therefore led me to explore, read and learn everything about it as much as possible. I dived into Xcode, bought some courses about iOS development and amazed by interacting with people through applications.
+    A year ago I was going to change my major to Physchology and began studying in order to get into the program. During that time I replaced my laptop with a Macbook Air. Then my world started to change. OS X was astonishing and natural. Therefore led me to explore, read and learn everything about it as much as possible. I dived into Xcode, bought some courses about iOS development and amazed by interacting with people through applications.
 
-After six months of self improvement I developed nearly 10 applications, most of my applications improved synchronously with my learning progress. I’m glad that I finally found my motivation. Developing something for myself with loving it and its response of appreciation by people drives me. I really feel like an artist.
+    After six months of self improvement I developed nearly 10 applications, most of my applications improved synchronously with my learning progress. I’m glad that I finally found my motivation. Developing something for myself with loving it and its response of appreciation by people drives me. I really feel like an artist.
 
-Nowadays I am pursuing CE major, exploring Swift and integrating it to my projects.</string>
+    Nowadays I am pursuing CE major, exploring Swift and integrating it to my projects.</mutableString>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -511,9 +529,10 @@ Nowadays I am pursuing CE major, exploring Swift and integrating it to my projec
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="SNY-Ij-xLn">
+                                        <rect key="frame" x="0.0" y="70" width="600" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SNY-Ij-xLn" id="AYr-zg-ERq">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nice to meet you, why don't you show me your projects?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXU-aL-DGH">
@@ -534,9 +553,10 @@ Nowadays I am pursuing CE major, exploring Swift and integrating it to my projec
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="viN-ck-Ycy">
+                                        <rect key="frame" x="0.0" y="140" width="600" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="viN-ck-Ycy" id="Jvl-Ud-36j">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interesting. I'd like to know you better." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EX-6u-l6W">

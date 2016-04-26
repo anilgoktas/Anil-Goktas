@@ -11,29 +11,16 @@ import CoreTelephony
 import Social
 import MessageUI
 
-class AboutViewController: UITableViewController {
+final class AboutViewController: UITableViewController {
     
     // MARK: - IBOutlets
     
     @IBOutlet weak var phoneButton: UIButton!
     
-    // MARK: - Properties
-    
-    private struct ContactInfo {
-        static let appStoreURL = "itms-apps://itunes.com/apps/anilgoktas"
-        static let linkedInURL = "https://www.linkedin.com/in/anilgoktas"
-        static let githubURL = "https://github.com/anilgoktas"
-        static let twitterAddress = "@goktasanil"
-        static let mailAddress = "goktas.anil@gmail.com"
-        static let phoneNumber = "telprompt://00905374964735"
-    }
-    
     // MARK: - View Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
         
         if !SIMisAvailable() { phoneButton.hidden = true }
     }
@@ -41,26 +28,26 @@ class AboutViewController: UITableViewController {
     // MARK: - IBActions
     
     @IBAction func showAppStore(sender: AnyObject) {
-        if let appStoreURL = NSURL(string: ContactInfo.appStoreURL) {
+        if let appStoreURL = NSURL(string: AnilGoktas.ContactInfo.appStoreURL) {
             UIApplication.sharedApplication().openURL(appStoreURL)
         }
     }
     
     @IBAction func showLinkedIn(sender: AnyObject) {
-        if let linkedInURL = NSURL(string: ContactInfo.linkedInURL) {
+        if let linkedInURL = NSURL(string: AnilGoktas.ContactInfo.linkedInURL) {
             UIApplication.sharedApplication().openURL(linkedInURL)
         }
     }
     
     @IBAction func showGithub(sender: AnyObject) {
-        if let githubURL = NSURL(string: ContactInfo.githubURL) {
+        if let githubURL = NSURL(string: AnilGoktas.ContactInfo.githubURL) {
             UIApplication.sharedApplication().openURL(githubURL)
         }
     }
     
     @IBAction func contactTwitter(sender: AnyObject) {
         let twitterViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-        twitterViewController.setInitialText("Hey! " + ContactInfo.twitterAddress)
+        twitterViewController.setInitialText("Hey! " + AnilGoktas.ContactInfo.twitterAddress)
         presentViewController(twitterViewController, animated: true, completion: nil)
     }
     
@@ -68,28 +55,18 @@ class AboutViewController: UITableViewController {
         if MFMailComposeViewController.canSendMail() {
             let composer = MFMailComposeViewController()
             composer.mailComposeDelegate = self
-            composer.setToRecipients([ContactInfo.mailAddress])
+            composer.setToRecipients([AnilGoktas.ContactInfo.mailAddress])
             composer.setSubject("Hey!")
             presentViewController(composer, animated: true, completion: nil)
         }
     }
     
     @IBAction func contactPhone(sender: AnyObject) {
-        if let phoneURL = NSURL(string: ContactInfo.phoneNumber) {
+        if let phoneURL = NSURL(string: AnilGoktas.ContactInfo.phoneNumber) {
             UIApplication.sharedApplication().openURL(phoneURL)
         }
     }
     
-    // MARK: - Private
-    
-    private func SIMisAvailable() -> Bool {
-        if let
-        cellularProvider  = CTTelephonyNetworkInfo().subscriberCellularProvider,
-        _ = cellularProvider.mobileNetworkCode
-        { return true }
-        return false
-    }
-
 }
 
 // MARK: - UITableViewDelegate
@@ -110,7 +87,6 @@ extension AboutViewController {
     override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let footerView = UIView(frame: CGRectMake(0, 0, tableView.frame.size.width, view.bounds.size.height/12))
         footerView.backgroundColor = .clearColor()
-        
         return footerView
     }
     
@@ -129,6 +105,20 @@ extension AboutViewController: MFMailComposeViewControllerDelegate, UINavigation
     
     func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         dismissViewControllerAnimated(false, completion: nil)
+    }
+    
+}
+
+// MARK: - Helper Functions
+
+extension AboutViewController {
+    
+    private func SIMisAvailable() -> Bool {
+        if let
+            cellularProvider  = CTTelephonyNetworkInfo().subscriberCellularProvider,
+            _ = cellularProvider.mobileNetworkCode
+        { return true }
+        return false
     }
     
 }

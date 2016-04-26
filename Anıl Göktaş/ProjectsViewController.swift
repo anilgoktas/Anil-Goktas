@@ -8,14 +8,18 @@
 
 import UIKit
 
-class ProjectsViewController: UIPageViewController {
+final class ProjectsViewController: UIPageViewController {
+    
+    // MARK: - Constants
+    
+    struct Storyboard {
+        static let projectViewControllerIdentifier = "ProjectViewControllerIdentifier"
+    }
     
     // MARK: - Properties
     
     let projects = Project.projects()
-    struct Storyboard {
-        static let projectViewControllerIdentifier = "ProjectViewControllerIdentifier"
-    }
+    
     
     // MARK: - View Life Cycle
     
@@ -26,7 +30,7 @@ class ProjectsViewController: UIPageViewController {
         dataSource = self
         
         // Create the first walkthrough screen
-        if let startingViewController = self.viewControllerAtIndex(0) {
+        if let startingViewController = viewControllerAtIndex(0) {
             setViewControllers([startingViewController], direction: .Forward, animated: true, completion: nil)
         }
     }
@@ -38,9 +42,8 @@ class ProjectsViewController: UIPageViewController {
 extension ProjectsViewController: UIPageViewControllerDataSource {
     
     func viewControllerAtIndex(index: Int) -> ProjectViewController? {
-        if index == NSNotFound || index < 0 || index >= projects.count {
-            return nil
-        }
+        if index == NSNotFound || index < 0 || index >= projects.count { return nil }
+        
         // Create a new view controller and pass data.
         if let projectViewController = storyboard?.instantiateViewControllerWithIdentifier(Storyboard.projectViewControllerIdentifier) as? ProjectViewController {
             projectViewController.project = projects[index]
@@ -58,13 +61,13 @@ extension ProjectsViewController: UIPageViewControllerDataSource {
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         var index = (viewController as! ProjectViewController).index
-        index++
+        index = index + 1
         return self.viewControllerAtIndex(index)
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         var index = (viewController as! ProjectViewController).index
-        index--
+        index = index - 1
         return self.viewControllerAtIndex(index)
     }
     

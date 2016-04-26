@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Project: NSObject {
+final class Project: NSObject {
     
     // MARK: - Properties
     
@@ -18,7 +18,7 @@ class Project: NSObject {
     var iTunesURL: NSURL
     var icon: UIImage
     
-    // MARK: - Lifetime
+    // MARK: - Life Cycle
     
     init(key: String, name: String, detail: String, iTunesURL: String) {
         self.key = key
@@ -28,10 +28,10 @@ class Project: NSObject {
         if let URL = NSURL(string: iTunesURL) {
             self.iTunesURL = URL
         } else {
-            self.iTunesURL = NSURL(string: "https://twitter.com/goktasanil")!
+            self.iTunesURL = NSURL(string: AnilGoktas.ContactInfo.twitterURLString)!
         }
         
-        if let icon = UIImage(named: key+"Icon") {
+        if let icon = UIImage(named: key + "Icon") {
             self.icon = icon
         } else {
             self.icon = UIImage(named: "IconPlaceholder")!

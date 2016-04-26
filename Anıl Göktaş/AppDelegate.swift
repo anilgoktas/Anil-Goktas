@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        window!.backgroundColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1)
+        window?.backgroundColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1)
         
         return true
     }
@@ -45,16 +45,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+// MARK: - Helper Functions
+
 extension UIApplication {
+    
+    class func sharedDelegate() -> AppDelegate {
+        return UIApplication.sharedApplication().delegate as! AppDelegate
+    }
     
     class func topViewController(base: UIViewController? = UIApplication.sharedApplication().keyWindow?.rootViewController) -> UIViewController? {
         if let nav = base as? UINavigationController {
             return topViewController(nav.visibleViewController)
         }
-        if let tab = base as? UITabBarController {
-            if let selected = tab.selectedViewController {
-                return topViewController(selected)
-            }
+        if let tab = base as? UITabBarController, let selected = tab.selectedViewController {
+            return topViewController(selected)
         }
         if let presented = base?.presentedViewController {
             return topViewController(presented)
